@@ -1,0 +1,61 @@
+.extras{
+    position: relative;
+    top:20rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 10rem;
+
+        @media only screen and (max-width:$extra-medium){
+            margin-top: 15rem;
+        }
+
+    &__title{
+       text-align: center;
+       font-size: 3rem;
+
+            @media only screen and (max-width:320px){
+                 font-size: 2.3rem;
+     }
+    }
+    &__para{
+        text-align: center;
+    }
+    &__container{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-column-gap: 2rem;
+        @include center;
+
+            &--item{
+                display: grid;
+                grid-template-rows: max-content min-content min-content max-content;
+                grid-row-gap: 1rem;
+                margin-bottom: 2rem;
+
+                &-img{
+                    width: 6rem;
+                    height: 6rem;
+                    margin: 0 auto;
+                }
+                &-title{
+                    margin: 0 auto;
+                    font-size: 1.6rem;
+                }
+                &-paragraph{
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                &-btn{
+                    width: 30%; // Make the width of the button 30% of its parent in the grid
+                    margin: 0 auto;
+                    @include button-style-starbucks-green;
+
+                        &:hover{
+                            background-color: var(--off-white);
+                            color: black;
+                        }
+                }
+            }
+    }
+}

@@ -1,0 +1,36 @@
+*{
+    font-family: 'Hind Madurai', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+// Colours:
+   :root{
+    --very-light-brown:  #f3f1e7;
+    --white: #ffffff;
+    --black: #000000;
+    --off-white:rgb(231, 231, 231);
+    --starbucks-green: #008248;
+    --light-green: #d4e9e2;
+    --super-light-green: #f1f8f6;
+   }
+//Breakpoints
+$extra-extra-large: 92.375em; // 1478px
+$extra-large: 81.25em; //1300px
+$favorites-large: 61.25em; // 980px
+$favorites-medium: 43.75em; //700px
+$favorites-small: 37.5em; //600px
+$large:  59.375em;     //900px
+$extra-medium: 40.625em; //650px
+$medium: 46.875em; //750px
+$small: 31.25em; //500px
+$extra-small:28.125em; //450px
+$extra-small-2: 25em; // 400px
+$extra-extra-small:  20em; // 320px - the smallest device with the site is designed for
+$gifts-medium: 50.625em; //810px
+$gifts-large:  68.75em; //1100px
+
+$menu-large: 60.9375em; // 975px

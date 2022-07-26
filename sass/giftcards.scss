@@ -1,0 +1,431 @@
+.gifts{
+    padding-top: 10rem;
+}
+
+.gcontainer2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    margin-left: 6rem;
+    margin-bottom: 3.5rem;
+    @include center;
+
+    @media only screen and (max-width:810px){
+        margin-left: 1.3rem;
+    }
+    @media only screen and (max-width:380px){
+        margin-left: -1rem;
+    }
+    
+    &__item2{
+        &--txtt{
+            display: grid;
+            grid-template-columns: 1fr max-content max-content;
+            grid-column-gap: 0.7rem;
+            margin-top: 2rem;
+            grid-gap: 2rem;
+            @media only screen and (max-width:430px){
+                margin-top: 4rem;
+            }
+            @media only screen and (max-width:380px){
+                margin-left: 2rem;
+            }
+
+        }
+        &-img2{
+            width: auto;
+            height: 11rem;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            transition: all .6s;
+            margin-top: 1.5rem;
+          
+            @media only screen and (max-width:810px){
+                width: auto;
+                height: 11rem;
+                margin-left: 3rem;
+            }
+            
+            &:not(:last-child){
+                margin-right: 1.6rem;
+            }
+                &:hover{
+                    transform: translateY(-5px);
+                }
+        }
+
+        &--title{
+            font-size: 1.3rem;
+            margin-bottom: 0.6rem;
+            
+            @media only screen and (max-width:$gifts-medium){
+                color: var(--starbucks-green);
+            }
+
+        }
+        &--see{
+            color: var(--starbucks-green);
+            font-size: 1rem;
+            cursor: pointer;
+            margin-right: 1.4rem;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 5px;
+            background-color: var(--white);
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            @media only screen and (max-width:400px){
+                margin-bottom: 1.3rem;
+
+
+            }
+        }
+
+        &--all{
+            grid-column: 2;
+            grid-row: 1;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-right: 1.4rem;
+            text-decoration: none;
+            color:  var(--starbucks-green);
+            padding: 0.5rem;
+            border-radius: 5px;
+            background-color: var(--white);
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+            @media only screen and (max-width:400px){
+                grid-column: 2;
+                grid-row: 2;
+
+            }
+        }
+    }
+}
+.bulk{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    @include center;
+    background-color: var(--light-green);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &__item{
+        display: grid;
+        grid-template-columns: 400px 300px;
+        grid-template-rows: repeat(3,minmax(min-content, max-content));
+        grid-column-gap: 2rem;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 1.5rem;
+        border-radius: 5px;
+        grid-row-gap: 1.6rem;
+
+        @media only screen and (max-width:$gifts-medium){
+            grid-template-columns: 500px;
+            grid-template-rows: repeat(4,minmax(min-content, max-content));
+        }
+        @media only screen and (max-width:$favorites-small){
+            grid-template-columns: 400px;
+            grid-template-rows: repeat(4,minmax(min-content, max-content));
+        }
+        @media only screen and (max-width:$small){
+            grid-template-columns: 280px;
+            grid-template-rows: repeat(4,minmax(min-content, max-content));
+               }
+        @media only screen and (max-width:$extra-extra-small){
+            grid-template-columns: 200px;
+            grid-template-rows: repeat(4,minmax(min-content, max-content));
+            
+        }
+            &--img{
+                width: 100%;
+                height: auto;
+                grid-row: 1/ span 3;
+
+                @media only screen and (max-width:$gifts-medium){
+                    grid-row: 1;
+                    grid-column: 1;
+        
+                }
+            }
+            &--title{
+                font-size: 2rem;
+                @media only screen and (max-width:$gifts-medium){
+                    grid-row: 2;
+                    grid-column: 1;
+                    font-size: 1.6rem;
+
+                }
+            }
+            &--para{
+                grid-column: 2;
+                grid-row: 2;
+                @media only screen and (max-width:$gifts-medium){
+                    grid-row: 3;
+                    grid-column: 1;
+
+                }
+            }
+            &--btn{
+                grid-row: 3;
+                grid-column: 2;
+                width: 50%;
+                height: 2rem;
+                border: 1px solid var(--black);
+                border-radius: 50px;
+                text-decoration: none;
+                @include transition;
+                color: var(--black);
+                text-align: center;
+                padding-top: 0.4rem;
+
+                @media only screen and (max-width:$gifts-medium){
+                    grid-row:4;
+                    grid-column: 1;
+                    margin: 0 auto;
+
+                }
+            }
+    }
+}
+// The light green strip in the middle of the page
+.got{
+    width: 100vw;
+    height: 8rem;
+    background-color:  var(--light-green);
+    margin-bottom: 3rem;
+    @media only screen and (max-width:$large){
+        height: 17rem;
+    }
+    @media only screen and (max-width:400px){
+      height: 20rem;
+    }
+        &__content{
+            display: grid;
+            grid-template-columns: repeat(8, minmax(min-content,max-content));
+            grid-column-gap: 1rem;
+            @include center;
+            position: relative;
+            top: 3rem;
+
+            @media only screen and (max-width:$large){
+                grid-template-columns: repeat(2, minmax(min-content,max-content));
+                grid-template-rows: repeat(3, 50px);
+            }
+          
+            @media only screen and (max-width:430px){
+                margin-top: 4rem;
+            }
+            @media only screen and (max-width:400px){
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(5, 50px);
+            }
+            &--big{
+                @media only screen and (max-width:$gifts-medium){
+                    color: #008248;
+                }
+            }
+            &--small{
+                font-size: 1.8rem;
+                color: #008248;
+
+                @media only screen and (max-width:$gifts-medium){
+                   grid-row: 2;
+                   grid-column: 1;
+    
+                }
+                @media only screen and (max-width:400px){
+                    grid-row: 2;
+                    grid-column: 1;
+                }
+            }
+                &--btn1{
+                    width: 8rem;        
+                    height: 1.5rem;
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                    @include button-style-one;
+                    background-color: var(--off-white);
+                    @media only screen and (max-width:$large){
+                        grid-row: 2;
+                        grid-column: 1;
+         
+                     }
+                     @media only screen and (max-width:400px){
+                        grid-row: 3;
+                        grid-column: 1;
+                    }
+                }
+                &--btn2{
+                    background-color: white;
+                    width: 8rem;
+                    height: 1.5rem;
+                    text-align: center;
+                    color: black;
+                    @include button-style-one;
+
+                    @media only screen and (max-width:$large){
+                       grid-row: 2;
+                       grid-column: 2;
+        
+                    }
+                    @media only screen and (max-width:400px){
+                        grid-row: 4;
+                        grid-column: 1;
+                    }
+                }
+                &--terms{
+                    text-decoration: none;
+                    grid-column: 8;
+                    color: black;
+                    text-decoration: underline;
+
+                    @media only screen and (max-width:$large){
+                        grid-row: 3;
+                        grid-column: 1/ span 2;
+                        font-size:1.2rem;
+                     }
+                     @media only screen and (max-width:400px){
+                        grid-row: 5;
+                        grid-column: 1;
+                    }
+                }    
+        }
+}
+// All the popups for the gift cards
+.popup,
+.popup2,
+.popup3,
+.popup4,
+.popup5{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s cubic-bezier(0.96, 0.020000000000000018, 0.48, 0.98) 0.3s;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    top: 0;
+    left: 0;
+    z-index: 10000;
+
+        &:target{
+            opacity: 1;
+            visibility: visible;
+           
+        }
+        &__conent{
+            width: 80%;
+            padding: 2rem;
+            border-radius: 5px;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: #ffffff;
+            background-image: linear-gradient(225deg, #ffffff 0%, #94bfab 100%);
+            
+            
+            a{
+                float: right;
+                margin-top: -2rem;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                text-decoration: none;
+                color: white;
+                background-color: var(--starbucks-green);
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            }
+
+                @media only screen and (max-width:$favorites-medium){
+                    width: 75%;
+                }
+                @media only screen and (max-width:$favorites-small){
+                    width: 68%;
+
+                }
+                h1{
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                   
+                }
+      
+        }
+        &__imgs{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-row-gap: 1rem;
+          @include center;
+
+            @media only screen and (max-width:$favorites-medium){
+                grid-template-columns: repeat(2, min-content);
+                grid-row-gap: 0rem;
+            }
+            @media only screen and (max-width:$favorites-small){
+                grid-template-columns: max-content;
+            }
+          
+                    img{
+                        height: 10rem;
+                        width: auto;
+
+                        @media only screen and (max-width:$favorites-medium){
+                            height: 7.5rem;
+                            width: auto;
+                            border-radius: 5px;
+                        }
+                }
+        }
+}
+// The last set of cards the change when toggled
+.cards-vis{
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: repeat(2, max-content);
+    @include center;
+    padding-bottom: 2rem;
+    @media only screen and (max-width:320px){
+        margin-left: -1.8rem;
+    }
+        &--one{
+            display: grid;
+            grid-template-columns: repeat(4, max-content);
+            grid-row: 1;
+            grid-column: 1;
+            grid-row-gap: 1rem;
+
+                @media only screen and (max-width:$gifts-large){
+                    grid-template-columns: repeat(2, max-content);
+                }
+                @media only screen and (max-width:$favorites-small){
+                    grid-template-columns:  max-content;
+            }
+        }
+
+        &--two{
+            display: grid;
+            grid-template-columns: repeat(4, max-content);
+            grid-row: 1;
+            grid-column: 1;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 1s;
+            grid-row-gap: 1rem;
+
+            @media only screen and (max-width:$gifts-large){
+                grid-template-columns: repeat(2, max-content);
+            }
+            @media only screen and (max-width:$favorites-small){
+                grid-template-columns: max-content;
+            }
+                &:target{
+                 opacity: 1;
+                 visibility: visible;
+                }
+        }
+
+}
+.parents-title{
+    margin-left: 2rem;
+}
