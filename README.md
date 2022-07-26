@@ -3,5 +3,8 @@ This project clones the rewards, gift cards, and menu pages of the Starbucks web
 ## View live:
 
 ## Screenshots:
-<img src="https://github.com/magdalent/Frontend-Practice-Bonsai/blob/main/img1.png" alt="drawing" width="600"/>
-<img src="https://github.com/magdalent/Frontend-Practice-Bonsai/blob/main/img2.png" alt="drawing" width="600"/>
+<img src="https://github.com/magdalent/Starbucks-Website-Clone/blob/main/img1.png" alt="drawing" width="500"/>
+<img src="https://github.com/magdalent/Starbucks-Website-Clone/blob/main/img2.png" alt="drawing" width="500"/>
+<img src="https://github.com/magdalent/Starbucks-Website-Clone/blob/main/img3.png" alt="drawing" width="500"/>
+<img src="https://github.com/magdalent/Starbucks-Website-Clone/blob/main/img4.png" alt="drawing" width="500"/>
+<img src="https://github.com/magdalent/Starbucks-Website-Clone/blob/main/img5.png" alt="drawing" width="500"/>
